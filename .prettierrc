@@ -1,0 +1,7 @@
+semi:               false
+singleQuote:        false
+trailingComma:      all
+bracketSpacing:     true
+jsxBracketSameLine: true
+arrowParens:        always
+proseWrap:          always
