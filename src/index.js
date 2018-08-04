@@ -8,4 +8,7 @@ import NetNeutrality from "./content/net-neutrality"
 
 log.enableAll()
 
-ReactDOM.render(<App content={NetNeutrality}/>, document.getElementById("root"))
+ReactDOM.render(
+  <App content={NetNeutrality} />,
+  document.getElementById("root"),
+)

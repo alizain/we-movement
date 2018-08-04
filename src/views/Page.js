@@ -24,16 +24,16 @@ export default function Page({ title, background, args }) {
 
 function ArgumentList({ args }) {
   return (
-    <Accordion>{args.map((argument) => <ArgumentListItem {...argument} />)}</Accordion>
+    <Accordion>
+      {args.map((argument) => <ArgumentListItem {...argument} />)}
+    </Accordion>
   )
 }
 
 function ArgumentListItem({ title, body }) {
   return (
     <AccordionItem hideBodyClassName="accordion__item--collapsed">
-      <AccordionItemTitle>
-        {title}
-      </AccordionItemTitle>
+      <AccordionItemTitle>{title}</AccordionItemTitle>
       <AccordionItemBody hideBodyClassName="">
         <AgreeOrDisagree />
         {body}
@@ -44,7 +44,10 @@ function ArgumentListItem({ title, body }) {
 
 function AgreeOrDisagree() {
   return (
-    <div className="btn-group btn-group-sm" role="group" aria-label="Basic example">
+    <div
+      className="btn-group btn-group-sm"
+      role="group"
+      aria-label="Basic example">
       <button type="button" className="btn btn-strong-agree">
         Strongly Agree
       </button>
