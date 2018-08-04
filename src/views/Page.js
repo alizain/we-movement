@@ -8,15 +8,15 @@ import {
 
 export default function Page({ title, background, args }) {
   return [
-    <section className="mt-6 mb-5">
-      <h1>{title}</h1>
+    <section className="mt-4 mb-6">
+      <h1 className="mb-0">{title}</h1>
     </section>,
-    <section className="mb-5">
-      <h3>The Background</h3>
+    <section className="mb-6">
+      <h3 className="mb-1">The Background</h3>
       {background}
     </section>,
-    <section className="mb-5">
-      <h3>The Arguments</h3>
+    <section className="mb-6">
+      <h3 className="mb-1">The Arguments</h3>
       <ArgumentList args={args} />
     </section>,
   ]
@@ -30,11 +30,11 @@ function ArgumentList({ args }) {
 
 function ArgumentListItem({ title, body }) {
   return (
-    <AccordionItem>
+    <AccordionItem hideBodyClassName="accordion__item--collapsed">
       <AccordionItemTitle>
         {title}
       </AccordionItemTitle>
-      <AccordionItemBody>
+      <AccordionItemBody hideBodyClassName="">
         <AgreeOrDisagree />
         {body}
       </AccordionItemBody>

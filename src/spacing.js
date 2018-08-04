@@ -8,4 +8,4 @@ function calc(series, multiple, iters = 0) {
   }
 }
 
-console.log(calc([1.5, 1], 1.5, 6))
+console.log(calc([1, 0.75], 1.5, 8).reverse())

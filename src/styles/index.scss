@@ -6,14 +6,26 @@
     color: inherit;
 }
 
+.accordion {
+    margin-top: map-get($spacers, "3");
+}
+
 .accordion__item {
-    border-bottom: 1px solid $gray-300;
+    border-top: 1px solid $gray-200;
+    padding: map-get($spacers, "4") 0;
+}
+
+.accordion__item--collapsed {
+    padding: map-get($spacers, "3") 0;
+    .accordion__body {
+        display: none;
+    }
 }
 
 .accordion__title {
     border: 0;
     outline: 0;
-    padding: map-get($spacers, 4) 0;
+
 }
 
 .accordion__title,
@@ -24,10 +36,6 @@
 }
 
 .accordion__body {
+    margin-top: map-get($spacers, "3");
     display: block;
-    padding-bottom: map-get($spacers, 4);
-}
-
-.accordion__body--hidden {
-    display: none;
 }
