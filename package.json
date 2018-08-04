@@ -24,7 +24,7 @@
     "clean-css": "find ./src -name \"*.css\" -type f -delete",
     "start-css": "npm run build-css && npm run build-css -- --watch --recursive",
     "build-css": "npm run clean-css && ./node_modules/.bin/node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-    "start-js": "react-scripts start",
+    "start-js": "BROWSER=none react-scripts start",
     "build-js": "react-scripts build",
     "start": "npm-run-all -p start-css start-js",
     "build": "npm-run-all build-css build-js",

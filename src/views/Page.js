@@ -45,19 +45,19 @@ function ArgumentListItem({ title, body }) {
 function AgreeOrDisagree() {
   return (
     <div className="btn-group btn-group-sm" role="group" aria-label="Basic example">
-      <button type="button" className="btn">
+      <button type="button" className="btn btn-strong-agree">
         Strongly Agree
       </button>
-      <button type="button" className="btn">
+      <button type="button" className="btn btn-agree">
         Agree
       </button>
-      <button type="button" className="btn">
+      <button type="button" className="btn btn-neutral">
         Neutral
       </button>
-      <button type="button" className="btn">
+      <button type="button" className="btn btn-disagree">
         Disagree
       </button>
-      <button type="button" className="btn">
+      <button type="button" className="btn btn-strong-disagree">
         Strongly Disagree
       </button>
     </div>
