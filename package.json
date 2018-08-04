@@ -9,6 +9,7 @@
     "lodash": "^4.17.10",
     "loglevel": "^1.6.1",
     "react": "^16.4.1",
+    "react-accessible-accordion": "^2.4.4",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
