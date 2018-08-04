@@ -1,10 +1,11 @@
-import axios from "axios"
 import React from "react"
 import ReactDOM from "react-dom"
 import * as log from "loglevel"
 import App from "./views/App"
-import "./index.css"
+import "./styles/index.css"
+
+import NetNeutrality from "./content/net-neutrality"
 
 log.enableAll()
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(<App content={NetNeutrality}/>, document.getElementById("root"))

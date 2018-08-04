@@ -1,0 +1,33 @@
+@import "./base";
+@import "./bootstrap/scss/bootstrap.scss";
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.accordion__item {
+    border-bottom: 1px solid $gray-300;
+}
+
+.accordion__title {
+    border: 0;
+    outline: 0;
+    padding: map-get($spacers, 4) 0;
+}
+
+.accordion__title,
+.accordion__body {
+    & > *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.accordion__body {
+    display: block;
+    padding-bottom: map-get($spacers, 4);
+}
+
+.accordion__body--hidden {
+    display: none;
+}

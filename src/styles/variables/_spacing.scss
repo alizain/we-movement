@@ -1,0 +1,40 @@
+////
+//// Spacing
+////
+
+// generated with spacers.js
+$spacer: 1rem;
+$spacers: (
+    "0": 0,
+    "1q": (
+        $spacer * 0.25,
+    ),
+    "2q": (
+        $spacer * 0.5,
+    ),
+    "3q": (
+        $spacer * 0.75,
+    ),
+    "1": $spacer,
+    "2": (
+        $spacer * 1.5,
+    ),
+    "3": (
+        $spacer * 2.25,
+    ),
+    "4": (
+        $spacer * 3.38,
+    ),
+    "5": (
+        $spacer * 5.07,
+    ),
+    "6": (
+        $spacer * 7.61,
+    ),
+    "7": (
+        $spacer * 11.42,
+    ),
+    "8": (
+        $spacer * 17.13,
+    ),
+);

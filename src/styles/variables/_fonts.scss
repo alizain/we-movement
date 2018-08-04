@@ -1,0 +1,22 @@
+////
+//// Fonts
+////
+
+$font-family-special: "ff-tisa-web-pro", sans-serif;
+$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-serif: georgia, "noto serif", "times new roman", times, serif;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+
+////
+//// Headings
+////
+
+$headings-margin-bottom: ($spacer / 2) !default;
+$headings-font-family: $font-family-special;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.4;
+$headings-color: inherit !default;
